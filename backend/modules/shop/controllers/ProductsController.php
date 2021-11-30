@@ -2,7 +2,6 @@
 
 namespace backend\modules\shop\controllers;
 
-use common\models\AttributesValues;
 use common\models\ProductValues;
 use common\models\Products;
 use common\models\SearchProducts;
@@ -126,7 +125,7 @@ class ProductsController extends Controller
     }
 
 
-    public function actionAddAttributes($id) {
+   /* public function actionAddAttributes($id) {
 
         $model = $this->findModel($id);
         $attributes_model = AttributesValues::find()->where(['product_id' => $id])->one();
@@ -158,7 +157,7 @@ class ProductsController extends Controller
             'attributes_list' => $attributes_list, 'model' => $model, 'attributes_model' => $attributes_model, 'attributes_values' => $attributes_values
         ]);
     }
-
+*/
 
 
 

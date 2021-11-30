@@ -23,8 +23,6 @@ use Yii;
 class ProductCategory extends \yii\db\ActiveRecord
 {
 
-    private $_attributes;
-
     /**
      * {@inheritdoc}
      */
@@ -65,15 +63,15 @@ class ProductCategory extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'short_description' => 'Short Description',
-            'atribute_group_id' => 'Atribute Group ID',
-            'thumb' => 'Thumb',
+            'name' => 'Название',
+            'description' => 'Описание',
+            'short_description' => 'Краткое описание',
+            'atribute_group_id' => 'Группа атрибутов',
+            'thumb' => 'Изображение',
             'meta_title' => 'Meta Title',
             'meta_description' => 'Meta Description',
             'slug' => 'Slug',
-            'sort' => 'Sort',
+            'sort' => 'Сортировка',
         ];
     }
 
