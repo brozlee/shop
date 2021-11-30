@@ -54,6 +54,10 @@ class Attributes extends \yii\db\ActiveRecord
         return $this->hasOne(AttributesCategory::className(), ['id' => 'group_id']);
     }
 
+    public function getValues() {
+        return $this->hasMany(ProductValues::className(), ['attribut_id' => 'id']);
+    }
+
     public function getGroupList() {
         $groupList = array();
         $attributes_categories = AttributesCategory::find()->all();

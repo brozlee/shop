@@ -81,4 +81,17 @@ class ProductCategory extends \yii\db\ActiveRecord
     {
         return $this->hasOne(AttributesCategory::className(), ['id' => 'atribute_group_id']);
     }
+
+
+    public function getAttributesGroupList() {
+        $groupList = array();
+        $attr_group = AttributesCategory::find()->all();
+        if($attr_group){
+            foreach ($attr_group as $group) {
+                $groupList[$group->id] = $group->name;
+            }
+        }
+
+        return $groupList;
+    }
 }

@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'short_description')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'atribute_group_id')->textInput() ?>
+    <?= $form->field($model, 'atribute_group_id')->dropDownList($model->getAttributesGroupList(),array('prompt' => 'Выберите категорию атрибутов...')); ?>
 
     <?= $form->field($model, 'thumb')->textInput(['maxlength' => true]) ?>
 

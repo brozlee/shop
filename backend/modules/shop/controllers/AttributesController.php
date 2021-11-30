@@ -110,7 +110,11 @@ class AttributesController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        foreach ($model->values as $value) {
+            $value->delete();
+        }
+        $model->delete();
 
         return $this->redirect(['index']);
     }
