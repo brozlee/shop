@@ -2,8 +2,8 @@
 
 namespace backend\modules\shop\controllers;
 
-use common\models\AttributesValues;
-use common\models\SearchAttributesValues;
+use backend\modules\shop\models\AttributesValues;
+use backend\modules\shop\models\SearchAttributesValues;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

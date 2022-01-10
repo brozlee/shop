@@ -2,8 +2,8 @@
 
 namespace backend\modules\shop\controllers;
 
-use common\models\AttributesCategory;
-use common\models\SearchAttributesCategory;
+use backend\modules\shop\models\AttributesCategory;
+use backend\modules\shop\models\SearchAttributesCategory;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
